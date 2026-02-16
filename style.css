@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 40px;
+    position:sticky;
+    top:0;
+    background:#0f172a;
+    z-index:100;
+}
+
+nav ul{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#1d4ed8,#0ea5e9);
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero span{
+    color:yellow;
+}
+
+#typing{
+    margin-top:10px;
+    font-size:1.2rem;
+}
+
+.hero-buttons{
+    margin-top:20px;
+}
+
+.btn{
+    padding:10px 20px;
+    background:white;
+    color:#0f172a;
+    margin:5px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.secondary{
+    background:transparent;
+    border:2px solid white;
+    color:white;
+}
+
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+}
+
+.glass{
+    background:rgba(255,255,255,0.1);
+    padding:20px;
+    border-radius:15px;
+    backdrop-filter:blur(10px);
+    text-align:center;
+    transition:.3s;
+}
+
+.glass:hover{
+    transform:translateY(-5px);
+}
+
+.project{
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:15px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+}
+
+/* Animations */
+.fade-in{
+    opacity:0;
+    transform:translateY(20px);
+    transition:all .8s ease;
+}
+
+.fade-in.show{
+    opacity:1;
+    transform:translateY(0);
+}
